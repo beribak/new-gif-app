@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import SearchBar from './search_bar';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -10,7 +12,10 @@ class App extends Component {
 
     return(
       <div>
-        <h1>Hello</h1>
+        <div class="left-div">
+          <SearchBar />
+        </div>
+        <div class="right-div">Danko</div>
       </div>
     );
   }
