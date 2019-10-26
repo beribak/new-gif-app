@@ -2,11 +2,19 @@ import React, { Component } from 'react';
 
 import SearchBar from './search_bar';
 import Gif from './gif';
+import GifList from './gif_list';
 
 class App extends Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+      id: "R5MTbqqRFOCas",
+      gifs: [
+        "R5MTbqqRFOCas",
+        "hqmTmfV688u8I7w7fh"
+      ]
+    };
   }
 
   render() {
@@ -16,10 +24,12 @@ class App extends Component {
         <div className="left-div">
           <SearchBar />
           <div className="selected-gif">
-            <Gif />
+            <Gif id={this.state.id}/>
           </div>
         </div>
-        <div className="right-div">Danko</div>
+        <div className="right-div">
+          <GifList list={this.state.gifs}/>
+        </div>
       </div>
     );
   }
