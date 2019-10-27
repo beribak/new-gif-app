@@ -32,5 +32,27 @@ body {
 
 .right-div{
   flex: 0 0 40%;
+  background-color: #ecf0f1;
+  overflow: scroll;
+  text-align: center;
+
+  .gif-list {
+    // display: flex;
+    // background-color: rgba(1, 1, 1, 0.7);
+    // height: 100vh;
+    column-count: 2;
+    column-gap: 5px;
+    padding: 5px;
+    padding-top: 10px;
+
+    .gif{
+      width: 100%;
+      margin: 5px;
+      cursor: pointer;
+      padding-top: 0px;
+    }
+  }
 }
+
+
 

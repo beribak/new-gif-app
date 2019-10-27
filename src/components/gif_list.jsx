@@ -8,9 +8,12 @@ class GifList extends Component {
 
 
     return(
-      this.props.list.map(
-        gif => <Gif id={gif}/>
-      )
+
+      <div className="gif-list">
+        {this.props.list.map(
+                  gif => <Gif id={gif} key={gif} selectGif={this.props.selectGif} />
+                )}
+      </div>
     );
   }
 }
