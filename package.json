@@ -1,4 +1,5 @@
 {
+  "homepage": "https://beribak.github.io/new-gif-app",
   "license": "UNLICENSED",
   "devDependencies": {
     "@babel/cli": "^7.1.5",
